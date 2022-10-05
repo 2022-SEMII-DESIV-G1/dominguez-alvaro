@@ -1,0 +1,27 @@
+body {
+    font-family: arial;
+    max-width: 50%;
+    display: flex;
+}
+.name{
+    color:#375e97;
+    font-family: Georgia; 
+    border-bottom: solid 2px #375e97;
+} 
+.title{
+    color: #999999;
+}
+.box{
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+}
+.link {
+    text-decoration: underline #fb6542;
+    color: #fb6542;
+}
+ul {
+    list-style-type: disc;
+}
