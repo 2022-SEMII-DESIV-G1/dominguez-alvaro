@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Parcial 02</title>
+  </head>
+  <body id="background">
+    <section id="piramyd"> </section>
+    
+     <div id="box">
+      <h1 class="title"> Recorrido de una piramide </h1>
+      <h4 class="title"> Recorrido mas alto de Piramide</h4>
+        <b id="sumFinal"> </b>
+        <input type="button" id="btn_01" name="boton" value="Calcular" onclick="calcular()"/>
+        <input type="button" id="btn_02" name="boton" value="Limpiar" onclick="borra('texto')" hidden="true"/>
+
+		<script>
+          $(function(){
+            $('#btn_01').click(function calcular(){
+              $('#btn_02').show();
+              $('#btn_01').hide();
+              respuesta();
+            });
+            $('#btn_02').click(function(){
+              $('#btn_02').hide();
+              $('#btn_01').show();
+              document.getElementById("sumFinal").innerHTML= "";
+            });
+          })
+        </script>
+      </div>
+	  <script src="js/pyramid.js"></script>
+  </body>
+</html>
