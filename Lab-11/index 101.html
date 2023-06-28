@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <body>
+         <canvas id="glCanvas" width="640" height="480"></canvas>
+    </body>
+
+    <script>
+        function main(){
+            const canvas=document.querySelector("#glCanvas");
+            //Inicializando contexto GL
+            const gl=canvas.getContext("webgl");
+            //Continuar solo si web gl esta disponible y funcionando.
+            if(gl===null){
+            alert("No se puede inicializar WebGL.Es posible que su navegador no lO admita");
+            return;
+            }
+            //Establecer Color claro a  negro ,totalmente opaco
+            gl.clearColor(0.0, 0.0 , 0.0, 1.0);
+            //Borrar Bufer de color con el color claro especificado
+            gl.clear(gl.COLOR_BUFFER_BIT); 
+            gl.drawArray()
+           // component[
+
+           // ]
+        } 
+        window.onload= main;
+    </script>
+</body>
+</html>
