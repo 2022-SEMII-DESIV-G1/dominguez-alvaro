@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de CSS3 con el metodo scale 3d()</title>
+
+    <style>
+        .container{
+            margin: 100px;
+            width: 250px;
+            height: 250px;
+            perspective: 300px;
+            border: 4px solid #6486ab;
+            background: #e9eef3;
+        }
+        .transformed{
+            transform: scale3d(1, 1, 2)rotate3d(1, 0 ,0, 60deg);
+        }
+    </style>
+</head>
+<body>
+    <h2>Antes de Escalar:</h2>  
+    <div class="container">
+        <img src="spade.jpg" alt="Club Card">
+    </div>
+    <h2>Despues de Escalar:</h2>
+    <div class="container">
+        <img src="spade.jpg" class="transformed" alt="Club Card">
+    </div>
+</body>
+</html>
