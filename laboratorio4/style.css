@@ -1,0 +1,52 @@
+.contenedor {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.cont1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 7%;
+}
+
+.cont2 {
+    top: 1cm;
+    left: 1cm;
+    right: 1cm;
+    background-color:rgb(248, 248, 246);
+    padding: 15px 15px;
+    border-radius: 2% #000;
+    flex-direction:column;
+    position: absolute;
+}
+
+.boton-calcular {
+    background-color: rgb(154, 4, 4);
+    color: white;
+    border: none;
+    padding: 2px 30px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición desde la parte inferior */
+    right: 10px; /* Ajusta la posición desde la derecha */
+}
+
+.tarjeta {
+    border-radius: 5%;
+    padding: 8px;
+    margin: 6px;
+    display: inline-block;
+    cursor: pointer;
+    padding: left 4cm;
+    position: absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Agrego sombra a los botones  */
+    position:relative;
+    left: 1cm;
+   
+}
+
+.input-group {
+    margin-bottom: 20px; /* Agrega espacio entre el input y el título */
+    margin-right: 20px;
+}
